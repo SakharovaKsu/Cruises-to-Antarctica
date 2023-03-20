@@ -15,14 +15,15 @@
   main {
     flex-grow: 1;
   }
-}
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
+  // &--background {
+  //   position: absolute;
+  //   background-color: $color-tangaroa;
+  //   @include graphic-retina("home-screen-background");
+  //   width: 100%;
+  //   height: 650px;
+  //   z-index: -2;
+  // }
 }
 
 .visually-hidden {

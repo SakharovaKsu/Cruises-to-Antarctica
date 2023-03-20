@@ -9,18 +9,39 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
+    <div class="wrapper wrapper--background">
+      <header class="header">
+        <div class="container">
+          <nav class="header__nav header__list--closed">
+            <a class="header__logo" href="index.html">
+              <img class="logo__picture" src="img/svg/logo.svg" width="70" height="38" alt="Иконка логотипа Круиза в Антарктиду.">
+            </a>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">Преимущества </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Направления</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Ближайшие круизы</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <button class="header__button" type="button">
+              <span class="visually-hidden">Mеню</span>
+            </button>
+          </nav>
+        </div>
       </header>
       <main>
+        <h1 class="visually-hidden">Круизы в Антарктику</h1>
         <section class="intro">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <h2>Круизы в Антарктику</h2>
+            <p>Волшебный мир айсбергов и пингвинов</p>
           </div>
         </section>
       </main>

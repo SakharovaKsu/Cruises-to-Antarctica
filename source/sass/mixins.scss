@@ -1,6 +1,26 @@
-@mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+@mixin media-retina {
+  @media (min-resolution: 2dppx) {
     @content;
+  }
+}
+
+@mixin graphic-webp($filename, $extname: "jpg") {
+  $webp: url("../img/#{$filename}.webp");
+
+  @supports (background-image: $webp) {
+    background-image: $webp;
+  }
+
+  @supports not (background-image: $webp) {
+    background-image: url("../img/#{$filename}.#{$extname}");
+  }
+}
+
+@mixin graphic-retina($filename, $extname: "jpg") {
+  @include graphic-webp($filename, $extname);
+
+  @include media-retina {
+    @include graphic-webp("#{$filename}@2x", $extname);
   }
 }
 
@@ -19,6 +39,10 @@
 }
 
 @mixin active {
+  &:active {
+    @content;
+  }
+
   &.focus-visible:active {
     @content;
   }
@@ -32,6 +56,14 @@
   }
 
   &.focus-visible:focus {
+    @content;
+  }
+
+  &:focus {
+    @content;
+  }
+
+  &:focus-visible {
     @content;
   }
 }
