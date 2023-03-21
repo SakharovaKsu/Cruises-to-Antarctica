@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper wrapper--background">
+    <div class="wrapper firstscreen">
+
+      <!-- Меню -->
       <header class="header">
         <div class="container">
           <nav class="header__nav header__list--closed">
-            <a class="header__logo" href="index.html">
+            <a class="header__logo logo" href="index.html">
               <img class="logo__picture" src="img/svg/logo.svg" width="70" height="38" alt="Иконка логотипа Круиза в Антарктиду.">
             </a>
             <ul class="header__list">
@@ -38,15 +40,100 @@
       </header>
       <main>
         <h1 class="visually-hidden">Круизы в Антарктику</h1>
+
+        <!-- Первый экран -->
         <section class="intro">
           <div class="container">
-            <h2>Круизы в Антарктику</h2>
+            <h2>Круизы в&nbsp;Антарктику</h2>
             <p>Волшебный мир айсбергов и пингвинов</p>
           </div>
         </section>
+
+        <!-- Описание -->
+        <section class="description">
+          <div class="description__container container">
+            <div class="description__box">
+              <h2>Путешествие на&nbsp;край Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+            </div>
+            <picture>
+              <source type="image/webp" srcset="img/penguins.webp 1x, img/penguins@2x.webp 2x">
+              <img src="img/penguins.jpg" srcset="img/penguins@2x.jpg 2x" width="560" height="300" alt="Три гуляющих пингвина по снегам Антарктики.">
+            </picture>
+          </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="benefits">
+          <div class="benefits__container container">
+            <h2>Преимущества</h2>
+            <ul class="benefits__list">
+              <li class="benefits__item benefits__item--one">
+                <h3>Небольшой круизный лайнер</h3>
+                <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+              </li>
+              <li class="benefits__item benefits__item--two">
+                <h3>Система <br>все включено</h3>
+                <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+              </li>
+              <li class="benefits__item benefits__item--three">
+                <h3>Экскурсионные туры на Zodiac</h3>
+                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac c&nbsp;опытными экскурсоводами.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
-      <footer>
-        <div class="container"></div>
+
+      <!-- Подвал -->
+      <footer class="footer">
+        <div class="footer__container container">
+          <a class="footer__logo logo" href="index.html">
+            <img class="logo__picture" src="img/svg/logo.svg" width="70" height="38" alt="Иконка логотипа Круиза в Антарктиду.">
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Преимущества </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Направления</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Ближайшие круизы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__img" width="12" height="20" aria-label="Логотип Одноклассников.">
+                    <use xlink:href="./img/sprite.svg#ok"></use>
+                  </svg>
+                  <span class="visually-hidden">Одноклассники</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__img" width="20" height="20" aria-label="Логотип Dzen.">
+                    <use xlink:href="./img/sprite.svg#dzen"></use>
+                  </svg>
+                  <span class="visually-hidden">Dzen</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg class="social__img" width="20" height="20" aria-label="Логотип Reddit.">
+                    <use xlink:href="./img/sprite.svg#reddit"></use>
+                  </svg>
+                  <span class="visually-hidden">Reddit</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
 
@@ -79,6 +166,13 @@
       </div>
     </div>
 
+    <script>
+      window.pixelperfect = {
+        breakpoints: [320, 768, 1920],
+        folder: 'img/pixelperfect'
+      };
+    </script>
+    <script src="https://efiand.github.io/pixelperfect/pixelperfect.min.js"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

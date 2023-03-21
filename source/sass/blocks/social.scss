@@ -1,0 +1,27 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.social__img {
+  fill: $color-alice-blue;
+
+  @include hover-focus {
+    fill: $color-maya-blue;
+    outline: none;
+  }
+
+  @include active {
+    fill: $color-pattens-blue;
+  }
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .social__img {
+    width: 16px;
+    height: 16px;
+  }
+}

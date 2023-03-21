@@ -1,0 +1,17 @@
+.logo {
+  @include hover-focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  @include active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: ($vp-1024 - 1px)) {
+  .logo {
+    width: 38px;
+    height: 20px;
+  }
+}

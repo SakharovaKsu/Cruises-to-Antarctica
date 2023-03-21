@@ -1,23 +1,9 @@
 .intro {
   position: relative;
-  padding-top: 162px;
-  padding-bottom: 283px;
+  padding-top: 160px;
+  padding-bottom: 300px;
   padding-left: 193px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-  &::before {
-    position: absolute;
-    content: '';
-    background-color: $color-tangaroa;
-    @include graphic-retina("home-screen-background");
-    background-size: 100% 670px;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 670px;
-    top: -126px;
-    left: 0;
-    z-index: -2;
-  }
 }
 
 .intro h2 {
@@ -35,19 +21,14 @@
   text-shadow: 0px 4px 4px $color-black;
   color: $color-alice-blue;
   margin: 0;
-  margin-top: 13px;
+  margin-top: 12px;
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
   .intro {
-    padding-bottom: 280px;
+    padding-bottom: 277px;
+    padding-top: 187px;
     padding-left: 0;
-
-    &::before {
-      @include graphic-retina("home-screen-background-tablet");
-      height: 638px;
-      background-size: auto 638px;
-    }
   }
 
   .intro h2 {
@@ -63,15 +44,8 @@
 
 @media (max-width: ($vp-768 - 1px)) {
   .intro {
-    padding-top: 143px;
-    padding-bottom: 185px;
-
-    &::before {
-      height: 500px;
-      top: -60px;
-      @include graphic-retina("home-screen-background-mobile");
-      background-size: auto 500px;
-    }
+    padding-top: 113px;
+    padding-bottom: 178px;
   }
 
   .intro h2 {
@@ -82,5 +56,6 @@
   .intro p {
     font-size: 16px;
     line-height: 140%;
+    max-width: 200px;
   }
 }

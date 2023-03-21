@@ -1,5 +1,5 @@
 .header {
-  padding: 25px 0;
+  padding: 27px 0;
   z-index: 1;
 }
 
@@ -9,21 +9,11 @@
   align-items: center;
 }
 
-.header__logo {
-  @include hover-focus {
-    opacity: 0.6;
-  }
-
-  @include active {
-    opacity: 0.3;
-  }
-}
-
 .header__list {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -13px;
+  margin-right: -15px;
 }
 
 .header__item {
@@ -34,7 +24,7 @@
   font-weight: 500;
   line-height: 20px;
   color: $color-alice-blue;
-  padding: 15px;
+  padding: 16px;
 
   @include hover-focus {
     border-bottom: 2px solid $color-alice-blue;
@@ -53,25 +43,29 @@
 
 @media (max-width: ($vp-1024 - 1px)) {
   .header {
-    padding: 20px 0;
+    padding: 12px 0;
   }
 
-  .header__logo {
-    width: 38px;
-    height: 20px;
+  .header__list {
+    margin-right: -11px;
   }
 
   .header__link {
     font-size: 14px;
     line-height: 17px;
+    padding: 12px;
   }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
+  .header {
+    padding: 21px 0;
+  }
+
   .header__button {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 6px;
+    right: -5px;
     display: block;
     width: 24px;
     height: 12px;
@@ -144,7 +138,7 @@
       height: 22px;
       top: 20px;
       left: 20px;
-      background-image: url("../../img/svg/logo-mobile.svg");
+      background-image: url("../img/svg/logo-mobile.svg");
       z-index: 1;
     }
   }
