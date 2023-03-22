@@ -39,9 +39,15 @@
   margin-left: auto;
 }
 
+@media (max-width: ($vp-1440 - 1px)) {
+  .footer__list {
+    gap: 10px;
+  }
+}
+
 @media (max-width: ($vp-1024 - 1px)) {
   .footer__list {
-    gap: 23px;
+    gap: 15px;
   }
 
   .footer__link {

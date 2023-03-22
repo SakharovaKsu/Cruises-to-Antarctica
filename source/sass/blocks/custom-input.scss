@@ -3,11 +3,10 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  padding-top: 14px;
+  padding-bottom: 6px;
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
     width: 100%;
   }
 
@@ -24,15 +23,13 @@
     input,
     textarea {
       flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
-
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      max-width: 303px;
+      min-height: 43px;
+      padding: 11px 0 11px 16px;
+      font-size: 14px;
+      line-height: 150%;
+      border: none;
       outline: none;
-
       transition: border 0.3s ease;
 
       @media screen and (max-width: 767px) {
@@ -41,11 +38,11 @@
       }
 
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        outline: 2px solid $color-maya-blue;
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        outline: 2px solid $color-maya-blue;
       }
     }
   }

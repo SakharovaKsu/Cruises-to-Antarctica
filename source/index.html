@@ -340,6 +340,46 @@
             </ul>
           </div>
         </section>
+
+        <!-- Форма бронирования -->
+        <section class="form">
+          <div class="form__container container">
+            <div class="form__box">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур <br>за 3-6 месяцев
+                до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+            <form class="form__inner" action="https://echo.htmlacademy.ru/" method="post" novalidate="">
+              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+              <div class="form__field custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                <label>
+                  <span>Имя</span>
+                  <input type="text" name="name" placeholder="Имя" pattern="[A-Za-z]{1,15}" required="">
+                </label>
+              </div>
+              <div class="form__field custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required" data-phone-length="18">
+                <label>
+                  <span>Телефон</span>
+                  <input type="tel" name="phone" placeholder="Телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required="">
+                </label>
+              </div>
+              <div class="form__field custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="">
+                </label>
+              </div>
+              <div class="form__checkbox" data-validate-type="checkbox">
+                <label>
+                  <input type="checkbox" name="agreement" checked="" required="">
+                  <span></span>
+                  Я согласен на обработку моих персональных данных
+                </label>
+              </div>
+              <button class="form__button" type="submit">Оставить заявку</button>
+            </form>
+          </div>
+        </section>
       </main>
 
       <!-- Подвал -->
