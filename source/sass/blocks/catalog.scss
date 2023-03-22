@@ -23,16 +23,60 @@
   margin: 0;
 }
 
-.catalog__box {
-  display: none;
+.catalog__item {
+  position: relative;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 53px 258px 75px;
+  max-width: 260px;
+  max-height: 386px;
+
+  &:hover .catalog__text,
+  &:focus-visible .catalog__text,
+  &:hover .catalog__button,
+  &:focus-visible .catalog__button {
+    display: block;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-tangaroa;
+  }
+
+  &:hover .catalog__box,
+  &:focus-visible .catalog__box {
+    display: block;
+  }
+
+  &:hover .catalog__box h3,
+  &:focus-visible .catalog__box h3 {
+    padding: 28px 24px 0 25px;
+  }
+
+  &:hover .catalog__image,
+  &:focus-visible .catalog__image {
+    display: none;
+  }
+}
+
+.catalog__image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  z-index: -1;
   background-color: $color-tangaroa;
-  padding-top: 27px;
-  padding-left: 25px;
+}
+
+.catalog__box {
+  display: flex;
+  grid-row: 1/4;
+  grid-column: 1/2;
+  height: 386px;
+  overflow: scroll;
 }
 
 .catalog__box h3 {
@@ -41,13 +85,17 @@
   line-height: 150%;
   color: $color-alice-blue;
   margin: 0;
-  margin-bottom: 15px;
+  margin-top: auto;
+  padding: 0 30px 23px;
+  align-self: self-end;
 }
 
 .catalog__text {
-  padding-left: 0;
-  margin: 0;
-  margin-bottom: 32px;
+  display: none;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 24px;
+  padding-top: 14px;
 }
 
 .catalog__text li {
@@ -73,50 +121,19 @@
   margin-bottom: 11px;
 }
 
-.catalog__box .catalog__botton {
+.catalog__button {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
+  text-align: center;
   background-color: $color-alice-blue;
-  padding: 12px 46px;
-}
-
-.catalog__item {
-  position: relative;
-  background-color: $color-tangaroa;
-  list-style-type: none;
-  height: 386px;
-
-  &:hover .catalog__box,
-  &:focus-visible .catalog__box {
-    display: block;
-  }
-
-  &:hover .catalog__link,
-  &:focus-visible .catalog__link {
-    display: none;
-  }
-}
-
-.catalog__img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.catalog__link {
-  // display: none;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  color: $color-alice-blue;
-  padding: 337px 0 30px 30px;
-  margin-top: auto;
+  max-width: 100%;
+  padding: 10px 0 9px;
+  margin: 0 25px 35px;
+  user-select: none;
+  display: none;
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
 
 @media (max-width: ($vp-1440 - 1px)) {
@@ -148,18 +165,9 @@
     margin-bottom: 52px;
   }
 
-  .catalog__img {
-    height: 386px;
-    max-width: 309px;
-  }
-
   .catalog__list {
     grid-template-columns: repeat(2, 309px);
     gap: 30px;
-  }
-
-  .catalog__link {
-    padding: 330px 0 30px 35px;
   }
 
   .catalog__box {
@@ -167,12 +175,38 @@
     padding-left: 34px;
   }
 
+  .catalog__item {
+    max-width: 309px;
+
+    &:hover .catalog__box,
+    &:focus-visible .catalog__box {
+      padding-top: 0;
+      padding-left: 10px;
+    }
+  }
+
+  .catalog__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .catalog__box {
+    padding-left: 5px;
+  }
+
+  .catalog__box h3 {
+    padding-bottom: 29px;
+  }
+
   .catalog__box p {
     max-width: 208px;
   }
 
-  .catalog__box .catalog__botton {
-    padding: 11px 62px;
+  .catalog__button {
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 9px 62px;
   }
 }
 
@@ -190,17 +224,27 @@
     grid-template-columns: 1fr;
   }
 
-  .catalog__link {
-    padding-top: 340px;
-    padding-bottom: 19px;
+  .catalog__item {
+    max-width: 270px;
+
+    &:hover .catalog__box,
+    &:focus-visible .catalog__box {
+      padding-left: 0;
+    }
   }
 
   .catalog__box {
     padding-top: 28px;
+    padding-left: 0;
+  }
+
+  .catalog__box h3 {
+    padding-bottom: 18px;
     padding-left: 25px;
   }
 
-  .catalog__box .catalog__botton {
-    padding: 11px 52px;
+  .catalog__button {
+    margin-left: 25px;
+    padding: 10px 52px;
   }
 }
