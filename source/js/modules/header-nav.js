@@ -1,4 +1,4 @@
-export const navFooter = () => {
+export const navHeader = () => {
   let headerNav = document.querySelector('.header__nav');
   let headerButton = document.querySelector('.header__button');
 

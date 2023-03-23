@@ -392,11 +392,13 @@
         <!-- Контакты -->
         <section class="contacts">
           <div class="contacts__container container">
-            <div class="contacts__map">
-              <picture>
-                <source type="image/webp" srcset="img/map.webp, img/map@2x.webp 2x">
-                <img class="contacts__picture" src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="560" height="306" alt="Карта города Санкт Петербург, улица Большая Конюшенная, 19/8.">
-              </picture>
+            <div class="contacts__map" id="map">
+              <div class="contacts__picture">
+                <picture>
+                  <source type="image/webp" srcset="img/map.webp, img/map@2x.webp 2x">
+                  <img src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="560" height="306" alt="Карта города Санкт Петербург, улица Большая Конюшенная, 19/8.">
+                </picture>
+              </div>
             </div>
             <div class="contacts__box">
               <div class="contacts__text">
@@ -472,35 +474,7 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
+    <!-- Скрипты -->
     <script>
       window.pixelperfect = {
         breakpoints: [320, 768, 1920],

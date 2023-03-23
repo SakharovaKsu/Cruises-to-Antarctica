@@ -2023,7 +2023,14 @@ button,
   column-gap: 100px;
 }
 
+.contacts__map {
+  position: relative;
+  max-width: 560px;
+  max-height: 306px;
+}
+
 .contacts__picture {
+  position: absolute;
   width: 100%;
   height: auto;
 }
