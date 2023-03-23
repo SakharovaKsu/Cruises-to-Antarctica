@@ -1403,7 +1403,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 33px;
+  gap: 5px;
   padding-left: 0;
   margin: 0;
 }
@@ -1996,6 +1996,107 @@ button,
   color: #f9fbfd;
 }
 
+.contacts {
+  padding: 120px 0;
+}
+
+.contacts h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 100px;
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+}
+
+.contacts__picture {
+  width: 100%;
+  height: auto;
+}
+
+.contacts__box {
+  max-width: 500px;
+  padding-top: 74px;
+}
+
+.contacts__box p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.contacts__text {
+  margin-bottom: 33px;
+}
+
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.contacts__link.focus-visible:focus {
+  color: #5bcfff;
+  outline: none;
+}
+
+.contacts__link:focus {
+  color: #5bcfff;
+  outline: none;
+}
+
+.contacts__link:focus-visible {
+  color: #5bcfff;
+  outline: none;
+}
+
+.contacts__link:hover ~ .contacts__img .contacts__link:focus-visible ~ .contacts__img {
+  fill: #5bcfff;
+  outline: none;
+}
+
+.contacts__link:active {
+  color: #003274;
+  opacity: 0.7;
+}
+
+.contacts__link.focus-visible:active {
+  color: #003274;
+  opacity: 0.7;
+}
+
+.contacts__link p {
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.contacts__img {
+  fill: #011c40;
+  width: 18px;
+  height: auto;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2116,6 +2217,14 @@ button,
   .form__button {
     padding: 11px 60px;
   }
+
+  .contacts__box {
+    padding-top: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 445px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2155,13 +2264,18 @@ button,
   }
 
   .footer__list {
-    gap: 15px;
+    gap: 0;
+    margin-top: -6px;
   }
 
   .footer__link {
     font-size: 12px;
     line-height: 15px;
-    padding: 11px;
+    padding: 12px;
+  }
+
+  .footer__logo {
+    margin-right: 13px;
   }
 
   .logo {
@@ -2172,6 +2286,10 @@ button,
   .social__img {
     width: 16px;
     height: 16px;
+  }
+
+  .social__list {
+    gap: 21px;
   }
 
   .intro {
@@ -2325,7 +2443,7 @@ button,
   }
 
   .form__box {
-    margin-bottom: 54px;
+    margin-bottom: 27px;
   }
 
   .form__box h2 {
@@ -2349,6 +2467,44 @@ button,
 
   .form__inner p {
     margin-bottom: 14px;
+  }
+
+  .contacts {
+    padding: 100px 0;
+  }
+
+  .contacts__container {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .contacts__box {
+    padding-top: 66px;
+    max-width: 324px;
+  }
+
+  .contacts__picture {
+    height: 335px;
+    width: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .contacts__text {
+    margin-bottom: 27px;
+  }
+
+  .contacts__link p {
+    max-width: 255px;
+  }
+
+  .contacts__img {
+    height: 22px;
+  }
+
+  .contacts__img--one {
+    margin-top: 5px;
   }
 }
 
@@ -2547,11 +2703,11 @@ button,
   }
 
   .footer {
-    padding: 40px 0;
+    padding: 42px 0;
   }
 
   .footer__logo {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .footer__container,
@@ -2566,8 +2722,8 @@ button,
   }
 
   .footer__list {
-    gap: 13px;
-    margin-bottom: 30px;
+    gap: 8px;
+    margin-bottom: 23px;
   }
 
   .footer__link {
@@ -2575,7 +2731,7 @@ button,
   }
 
   .footer__social {
-    margin-left: 0;
+    margin-left: -3px;
   }
 
   .intro {
@@ -2736,6 +2892,21 @@ button,
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  .contacts {
+    padding: 58px 0;
+  }
+
+  .contacts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .contacts__box {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
@@ -2861,6 +3032,11 @@ button,
     background-color: #5bcfff;
     color: #011c40;
     outline: #5bcfff;
+  }
+
+  .contacts__link:hover:not(.focus-visible) {
+    color: #5bcfff;
+    outline: none;
   }
 }
 
