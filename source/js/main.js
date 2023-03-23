@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
         hintContent: 'г. Санкт Петербург, ул. Большая Конюшенная, 19/8',
       },
       {
-        iconImageHref: 'img/svg/pin-map',
+        iconImageHref: 'img/svg/pin-map.svg',
         iconImageSize: [18, 22],
         iconLayout: 'default#image',
         iconShadow: false,

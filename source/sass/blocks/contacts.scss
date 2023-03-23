@@ -22,8 +22,8 @@
 
 .contacts__map {
   position: relative;
-  max-width: 560px;
-  max-height: 306px;
+  width: 560px;
+  height: 306px;
 }
 
 .contacts__picture {
@@ -139,5 +139,9 @@
 
   .contacts__box {
     padding-top: 0;
+  }
+
+  .contacts__map {
+    width: 100%;
   }
 }

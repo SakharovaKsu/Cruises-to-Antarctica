@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 let apiLoaded = false;
 
 const createMap = ({id, initials, placemark}) => {
@@ -9,8 +8,9 @@ const createMap = ({id, initials, placemark}) => {
 
 const initMap = (mapData) => {
   if (apiLoaded) {
-    return createMap(mapData);
+    createMap(mapData);
   }
+
   const scriptElement = document.createElement('script');
   scriptElement.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
   scriptElement.addEventListener('load', () => {
@@ -19,6 +19,7 @@ const initMap = (mapData) => {
       apiLoaded = true;
     });
   });
+
   document.body.append(scriptElement);
 };
 
