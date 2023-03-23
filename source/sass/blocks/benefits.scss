@@ -2,6 +2,7 @@
   padding-top: 111px;
   padding-bottom: 120px;
   background-color: $color-pattens-blue;
+
   @include graphic-retina("benefits-block-background");
   background-size: 100% 100%;
 }
@@ -25,7 +26,6 @@
 
 .benefits__item {
   position: relative;
-  margin-right: 30px;
   list-style-type: none;
   margin: 0;
   background-color: $color-alice-blue;
@@ -58,7 +58,7 @@
   }
 }
 
-.benefits__item--two br{
+.benefits__item--two br {
   display: none;
 }
 
@@ -117,7 +117,7 @@
     }
   }
 
-  .benefits__item--two br{
+  .benefits__item--two br {
     display: block;
   }
 
@@ -132,6 +132,7 @@
     padding-top: 58px;
     padding-bottom: 66px;
   }
+
   .benefits__container h2 {
     font-size: 24px;
     margin-bottom: 30px;

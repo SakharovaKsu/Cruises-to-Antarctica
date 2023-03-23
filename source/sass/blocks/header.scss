@@ -83,7 +83,7 @@
       width: 24px;
       height: 2px;
       background-color: $color-alice-blue;
-      box-shadow: 0 6px 0 0$color-alice-blue,0 12px 0 0$color-alice-blue;
+      box-shadow: 0 6px 0 0 $color-alice-blue, 0 12px 0 0 $color-alice-blue;
     }
 
     @include hover-focus {
@@ -95,7 +95,7 @@
     }
   }
 
-  .header__list--closed .header__list {
+  .header__nav--closed .header__list {
     display: none;
   }
 

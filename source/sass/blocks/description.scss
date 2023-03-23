@@ -25,6 +25,12 @@
   margin: 0;
 }
 
+.description__img {
+  background-color: $color-maya-blue;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: ($vp-1440 - 1px)) {
   .description__container {
     gap: 30px;

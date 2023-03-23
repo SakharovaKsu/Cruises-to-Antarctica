@@ -1,6 +1,7 @@
 .form {
   padding: 50px 0;
   background-color: $color-maya-blue;
+
   @include graphic-retina("shape-background");
   background-size: auto 100%;
 }
@@ -98,7 +99,7 @@
   background-color: $color-maya-blue;
 }
 
-.form__checkbox input[type=checkbox]:checked+span::after {
+.form__checkbox input[type="checkbox"]:checked + span::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -233,7 +234,7 @@
     height: 20px;
   }
 
-  .form__checkbox input[type=checkbox]:checked+span::after {
+  .form__checkbox input[type="checkbox"]:checked + span::after {
     top: 16px;
   }
 

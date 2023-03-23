@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
     <title>ProjectName</title>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -14,7 +18,7 @@
       <!-- Меню -->
       <header class="header">
         <div class="container">
-          <nav class="header__nav header__list--closed">
+          <nav class="header__nav header__nav--closed">
             <a class="header__logo logo" href="index.html">
               <img class="logo__picture" src="img/svg/logo.svg" width="70" height="38" alt="Иконка логотипа Круиза в Антарктиду.">
             </a>
@@ -58,7 +62,7 @@
             </div>
             <picture>
               <source type="image/webp" srcset="img/penguins.webp 1x, img/penguins@2x.webp 2x">
-              <img src="img/penguins.jpg" srcset="img/penguins@2x.jpg 2x" width="560" height="300" alt="Три гуляющих пингвина по снегам Антарктики.">
+              <img class="description__img" src="img/penguins.jpg" srcset="img/penguins@2x.jpg 2x" width="560" height="300" alt="Три гуляющих пингвина по снегам Антарктики.">
             </picture>
           </div>
         </section>
@@ -482,6 +486,7 @@
       };
     </script>
     <script src="https://efiand.github.io/pixelperfect/pixelperfect.min.js"></script>
+
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

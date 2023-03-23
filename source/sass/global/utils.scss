@@ -22,7 +22,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     background-color: $color-tangaroa;
     background-size: 100% 670px;
     background-repeat: no-repeat;
@@ -51,6 +51,7 @@
 @media (max-width: ($vp-768 - 1px)) {
   .firstscreen::before {
     height: 500px;
+
     @include graphic-retina("home-screen-background-mobile");
     background-size: auto 500px;
   }
@@ -58,24 +59,19 @@
 
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
 
 .scroll-lock-ios {
   position: fixed;
-
   overflow: hidden;
 }
 
@@ -93,8 +89,7 @@
 }
 
 .no-transition {
-  /* stylelint-disable-next-line */
-  transition: none !important;
+  transition: none;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
