@@ -25,12 +25,10 @@
 
 .catalog__item {
   position: relative;
+  display: flex;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 53px 258px 75px;
   max-width: 260px;
-  max-height: 386px;
+  height: 386px;
 
   &:hover .catalog__text,
   &:focus-visible .catalog__text,
@@ -41,6 +39,9 @@
 
   &:hover,
   &:focus-visible {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 53px 258px 75px;
     background-color: $color-tangaroa;
   }
 
@@ -73,9 +74,8 @@
 
 .catalog__box {
   display: flex;
-  grid-row: 1/4;
+  grid-row: 1/3;
   grid-column: 1/2;
-  height: 386px;
   overflow: scroll;
 }
 
@@ -96,6 +96,7 @@
   line-height: 20px;
   padding-left: 24px;
   padding-top: 14px;
+  padding-right: 15px;
 }
 
 .catalog__text li {
@@ -143,11 +144,6 @@
 
   .catalog__link {
     padding: 329px 0 30px 20px;
-  }
-
-  .catalog__box {
-    padding-top: 15px;
-    padding-left: 15px;
   }
 
   .catalog__box .catalog__botton {
