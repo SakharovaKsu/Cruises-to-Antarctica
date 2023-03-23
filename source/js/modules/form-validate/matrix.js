@@ -22,7 +22,7 @@ export const matrixReplace = (item, matrix, RegEx) => {
   }
 
   item.value = matrix.replace(/./g, (a) => {
-    if (/[_\^]/.test(a) && i < val.length) {
+    if (/[_^]/.test(a) && i < val.length) {
       return val.charAt(i++);
     } else if (i >= val.length) {
       return '';

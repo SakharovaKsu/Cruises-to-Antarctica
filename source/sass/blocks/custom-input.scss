@@ -1,5 +1,4 @@
-.custom-input,
-.custom-textarea {
+.custom-input {
   position: relative;
 
   display: flex;
@@ -20,8 +19,7 @@
       flex-direction: column;
     }
 
-    input,
-    textarea {
+    input {
       flex-grow: 1;
       max-width: 303px;
       min-height: 43px;
@@ -58,7 +56,7 @@
     right: 0;
     bottom: 35px;
 
-    color: #ff1553;
+    color: $color-torch-red;
 
     opacity: 0;
 
@@ -70,24 +68,23 @@
   }
 
   &.is-invalid {
-    input,
-    textarea {
-      border: 2px solid #ff1553;
+    input {
+      outline: 2px solid $color-torch-red;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        outline: 2px solid rgba($color-torch-red, 0.5);
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 2px solid #22b259;
+      outline: 2px solid $color-eucalyptus;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        outline: 2px solid rgba($color-eucalyptus, 0.5);
       }
     }
   }
@@ -98,11 +95,11 @@
     bottom: -5px;
 
     &.is-invalid {
-      color: #ff0000;
+      color: $color-torch-red;
     }
 
     &.is-valid {
-      color: #15ab07;
+      color: $color-eucalyptus;
     }
   }
 }

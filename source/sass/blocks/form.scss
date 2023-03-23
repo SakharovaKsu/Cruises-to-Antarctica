@@ -93,6 +93,11 @@
   background-color: $color-alice-blue;
 }
 
+.form__checkbox input:hover + span::before
+.form__checkbox input:focus-visible + span::before {
+  background-color: $color-maya-blue;
+}
+
 .form__checkbox input[type=checkbox]:checked+span::after {
   content: "";
   position: absolute;
