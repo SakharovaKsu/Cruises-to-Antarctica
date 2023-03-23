@@ -135,6 +135,17 @@
   display: none;
   grid-column: 1/2;
   grid-row: 3/4;
+  cursor: pointer;
+
+  @include hover-focus {
+    color: $color-tangaroa;
+    background-color: $color-maya-blue;
+  }
+
+  @include active {
+    color: $color-alice-blue;
+    background-color: $color-maya-blue;
+  }
 }
 
 @media (max-width: ($vp-1440 - 1px)) {

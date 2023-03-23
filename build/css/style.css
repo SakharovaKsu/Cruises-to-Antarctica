@@ -1351,27 +1351,27 @@ button,
 }
 
 .header__link.focus-visible:focus {
-  border-bottom: 2px solid #f9fbfd;
+  border-bottom: 1px solid #f9fbfd;
   outline: none;
 }
 
 .header__link:focus {
-  border-bottom: 2px solid #f9fbfd;
+  border-bottom: 1px solid #f9fbfd;
   outline: none;
 }
 
 .header__link:focus-visible {
-  border-bottom: 2px solid #f9fbfd;
+  border-bottom: 1px solid #f9fbfd;
   outline: none;
 }
 
 .header__link:active {
-  border-bottom: 2px solid #f9fbfd;
+  border-bottom: 1px solid #f9fbfd;
   opacity: 0.3;
 }
 
 .header__link.focus-visible:active {
-  border-bottom: 2px solid #f9fbfd;
+  border-bottom: 1px solid #f9fbfd;
   opacity: 0.3;
 }
 
@@ -1816,6 +1816,32 @@ button,
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
+  cursor: pointer;
+}
+
+.catalog__button.focus-visible:focus {
+  color: #011c40;
+  background-color: #5bcfff;
+}
+
+.catalog__button:focus {
+  color: #011c40;
+  background-color: #5bcfff;
+}
+
+.catalog__button:focus-visible {
+  color: #011c40;
+  background-color: #5bcfff;
+}
+
+.catalog__button:active {
+  color: #f9fbfd;
+  background-color: #5bcfff;
+}
+
+.catalog__button.focus-visible:active {
+  color: #f9fbfd;
+  background-color: #5bcfff;
 }
 
 .form {
@@ -3014,7 +3040,7 @@ button,
   }
 
   .header__link:hover:not(.focus-visible) {
-    border-bottom: 2px solid #f9fbfd;
+    border-bottom: 1px solid #f9fbfd;
     outline: none;
   }
 
@@ -3031,6 +3057,11 @@ button,
   .social__img:hover:not(.focus-visible) {
     fill: #5bcfff;
     outline: none;
+  }
+
+  .catalog__button:hover:not(.focus-visible) {
+    color: #011c40;
+    background-color: #5bcfff;
   }
 
   .form__checkbox label:hover:not(.focus-visible) {

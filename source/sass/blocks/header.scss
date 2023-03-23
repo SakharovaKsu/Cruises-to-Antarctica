@@ -27,12 +27,12 @@
   padding: 16px;
 
   @include hover-focus {
-    border-bottom: 2px solid $color-alice-blue;
+    border-bottom: 1px solid $color-alice-blue;
     outline: none;
   }
 
   @include active {
-    border-bottom: 2px solid $color-alice-blue;
+    border-bottom: 1px solid $color-alice-blue;
     opacity: 0.3;
   }
 }
