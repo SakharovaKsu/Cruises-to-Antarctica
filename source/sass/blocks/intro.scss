@@ -3,7 +3,7 @@
   padding-top: 160px;
   padding-bottom: 300px;
   padding-left: 193px;
-  filter: drop-shadow(0px 4px 4px $color-black);
+  filter: drop-shadow(0 4px 4px $color-black);
 }
 
 .intro h2 {
@@ -11,14 +11,14 @@
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
-  text-shadow: 0px 4px 4px $color-black;
+  text-shadow: 0 4px 4px $color-black;
   margin: 0;
 }
 
 .intro p {
   font-size: 20px;
   line-height: 24px;
-  text-shadow: 0px 4px 4px $color-black;
+  text-shadow: 0 4px 4px $color-black;
   color: $color-alice-blue;
   margin: 0;
   margin-top: 12px;

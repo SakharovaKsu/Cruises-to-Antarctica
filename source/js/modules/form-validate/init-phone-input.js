@@ -1,7 +1,7 @@
 const SELECTION_START = 4;
 const SELECTION_RANGE = 3;
-const baseCountryCode = '+7';
-const baseMatrix = ' (___) ___ __ __';
+const baseCountryCode = '8';
+const baseMatrix = '__________';
 const phoneLength = baseCountryCode.length + baseMatrix.length;
 
 const onPhoneInputInput = (e) => {

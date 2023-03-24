@@ -50,7 +50,6 @@
   right: 0;
   bottom: 35px;
   color: $color-torch-red;
-  opacity: 0;
   transition: opacity 0.3s ease;
 
   @media screen and (max-width: 767px) {
@@ -71,6 +70,7 @@
   position: absolute;
   right: 0;
   bottom: -5px;
+  color: $color-torch-red;
 
   &.is-invalid {
     color: $color-torch-red;

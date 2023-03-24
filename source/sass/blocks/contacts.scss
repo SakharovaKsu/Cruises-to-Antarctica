@@ -111,6 +111,10 @@
     object-fit: cover;
   }
 
+  .contacts__map {
+    height: 337px;
+  }
+
   .contacts__text {
     margin-bottom: 27px;
   }
@@ -130,7 +134,8 @@
 
 @media (max-width: ($vp-768 - 1px)) {
   .contacts {
-    padding: 58px 0;
+    padding-top: 56px;
+    padding-bottom: 43px;
   }
 
   .contacts__container {
@@ -143,5 +148,6 @@
 
   .contacts__map {
     width: 100%;
+    margin-top: 14px;
   }
 }

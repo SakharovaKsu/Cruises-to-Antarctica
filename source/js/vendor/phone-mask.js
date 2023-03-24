@@ -1,9 +1,9 @@
 const phoneInputs = document.querySelectorAll('input[type="tel"]');
-const COUNTRY_CODE = '+7';
+const COUNTRY_CODE = '8';
 const length = COUNTRY_CODE.length;
 
 const replacePhoneValue = (el) => {
-  const matrix = `${COUNTRY_CODE} (___) ___ __ __`;
+  const matrix = `${COUNTRY_CODE}__________`;
   const def = matrix.replace(/\D/g, '');
   let i = 0;
   let val = el.value.replace(/\D/g, '');
@@ -11,7 +11,6 @@ const replacePhoneValue = (el) => {
     val = def;
   }
   el.value = matrix.replace(/./g, (a) => {
-    // eslint-disable-next-line no-nested-ternary
     return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
   });
 };

@@ -70,9 +70,12 @@
 }
 
 .form__checkbox label {
+  display: flex;
+  align-items: center;
   font-size: 10px;
   line-height: 130%;
   color: $color-alice-blue;
+  padding-top: 8px;
 
   @include hover-focus {
     color: $color-maya-blue;
@@ -94,7 +97,7 @@
   background-color: $color-alice-blue;
 }
 
-.form__checkbox input:hover + span::before
+.form__checkbox input:hover + span::before,
 .form__checkbox input:focus-visible + span::before {
   background-color: $color-maya-blue;
 }
@@ -119,7 +122,7 @@
   line-height: 150%;
   padding: 11px 80px;
   border: none;
-  margin-top: 28px;
+  margin-top: 31px;
   width: 100%;
   cursor: pointer;
   background-color: $color-alice-blue;
@@ -239,7 +242,7 @@
   }
 
   .form__button {
-    margin-top: 11px;
+    margin-top: 28px;
     padding-left: 40px;
     padding-right: 40px;
   }

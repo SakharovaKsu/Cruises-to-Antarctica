@@ -697,7 +697,6 @@ button,
   right: 0;
   bottom: 35px;
   color: #ff1553;
-  opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -716,6 +715,7 @@ button,
   position: absolute;
   right: 0;
   bottom: -5px;
+  color: #ff1553;
 }
 
 .custom-input .input-message.is-invalid {
@@ -922,8 +922,8 @@ button,
   padding-top: 160px;
   padding-bottom: 300px;
   padding-left: 193px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .intro h2 {
@@ -931,14 +931,14 @@ button,
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
 }
 
 .intro p {
   font-size: 20px;
   line-height: 24px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   color: #f9fbfd;
   margin: 0;
   margin-top: 12px;
@@ -1354,9 +1354,16 @@ button,
 }
 
 .form__checkbox label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 10px;
   line-height: 130%;
   color: #f9fbfd;
+  padding-top: 8px;
 }
 
 .form__checkbox label.focus-visible:focus {
@@ -1390,7 +1397,8 @@ button,
   background-color: #f9fbfd;
 }
 
-.form__checkbox input:hover + span::before .form__checkbox input:focus-visible + span::before {
+.form__checkbox input:hover + span::before,
+.form__checkbox input:focus-visible + span::before {
   background-color: #5bcfff;
 }
 
@@ -1414,7 +1422,7 @@ button,
   line-height: 150%;
   padding: 11px 80px;
   border: none;
-  margin-top: 28px;
+  margin-top: 31px;
   width: 100%;
   cursor: pointer;
   background-color: #f9fbfd;
@@ -1901,6 +1909,10 @@ button,
     object-fit: cover;
   }
 
+  .contacts__map {
+    height: 337px;
+  }
+
   .contacts__text {
     margin-bottom: 27px;
   }
@@ -2285,13 +2297,14 @@ button,
   }
 
   .form__button {
-    margin-top: 11px;
+    margin-top: 28px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   .contacts {
-    padding: 58px 0;
+    padding-top: 56px;
+    padding-bottom: 43px;
   }
 
   .contacts__container {
@@ -2307,6 +2320,7 @@ button,
 
   .contacts__map {
     width: 100%;
+    margin-top: 14px;
   }
 }
 
