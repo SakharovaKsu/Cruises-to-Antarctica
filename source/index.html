@@ -359,30 +359,21 @@
             </div>
             <form class="form__inner" action="https://echo.htmlacademy.ru/" method="post">
               <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
-              <div class="form__field custom-input" data-on-input-validate  data-validate-type="text" data-limitation="name" data-required>
-                <label>
-                  <span>Имя</span>
-                  <input type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required>
-                </label>
+              <div class="form__field custom-input"  data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                <label for="name">Имя</label>
+                <input id="name" type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\- ]+$" required>
               </div>
-              <div class="form__field custom-input" data-on-input-validate data-validate-type="phone" data-required="data-required" data-phone-length="18">
-                <label>
-                  <span>Телефон</span>
-                  <input type="tel" name="phone" placeholder="Телефон" pattern="^\+?[\d ()-]+$" required>
-                </label>
+              <div class="form__field custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required data-phone-length="18">
+                <label for="tel">Телефон</label>
+                <input id="tel" type="tel" name="phone" placeholder="Телефон" pattern="^\+?[\d ()-]+$" required>
               </div>
-              <div class="form__field custom-input" data-on-input-validate data-validate-type="email" data-required>
-                <label>
-                  <span>Email</span>
-                  <input type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                </label>
+              <div class="form__field custom-input" data-on-input-validate data-validate-type="email" data-message-base="Поле обязательно к заполнению" data-required>
+                <label for="mail">Email</label>
+                <input id="mail" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
               </div>
-              <div class="form__checkbox" data-on-input-validate>
-                <label>
-                  <input type="checkbox" name="agreement" checked="" required>
-                  <span></span>
-                  Я согласен на обработку моих персональных данных
-                </label>
+              <div class="form__checkbox" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-validate-type="checkbox">
+                <input id="checkbox" type="checkbox" name="agreement" required>
+                <label for="checkbox">Я согласен на обработку моих персональных данных</label>
               </div>
               <button class="form__button" type="submit">Оставить заявку</button>
             </form>

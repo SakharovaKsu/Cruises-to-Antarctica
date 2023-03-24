@@ -69,10 +69,10 @@
 .custom-input .input-message {
   position: absolute;
   right: 0;
-  bottom: -5px;
-  color: $color-torch-red;
+  bottom: 0;
 
   &.is-invalid {
+    font-size: 12px;
     color: $color-torch-red;
   }
 

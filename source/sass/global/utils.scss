@@ -95,3 +95,9 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.form__checkbox .is-invalid  {
+  // position: absolute;
+  font-size: 12px;
+  color: $color-torch-red;
+}

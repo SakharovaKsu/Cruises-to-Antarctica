@@ -49,7 +49,7 @@
   margin-bottom: 12px;
 }
 
-.form__field span,
+.form__field label,
 .form__checkbox input {
   position: absolute;
   width: 1px;
@@ -86,7 +86,7 @@
   }
 }
 
-.form__checkbox span::before {
+.form__checkbox label::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -97,12 +97,12 @@
   background-color: $color-alice-blue;
 }
 
-.form__checkbox input:hover + span::before,
-.form__checkbox input:focus-visible + span::before {
+.form__checkbox input:hover + label::before,
+.form__checkbox input:focus-visible + label::before {
   background-color: $color-maya-blue;
 }
 
-.form__checkbox input[type="checkbox"]:checked + span::after {
+.form__checkbox input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -114,6 +114,12 @@
   background-position: 0 0;
   background-size: 12px 8px;
   cursor: pointer;
+}
+
+.form__checkbox .is-invalid {
+  position: absolute;
+  font-size: 12px;
+  color: $color-torch-red;
 }
 
 .form__button {
@@ -231,13 +237,13 @@
     line-height: 12px;
   }
 
-  .form__checkbox span::before {
+  .form__checkbox label::before {
     top: 9px;
     width: 20px;
     height: 20px;
   }
 
-  .form__checkbox input[type="checkbox"]:checked + span::after {
+  .form__checkbox input[type="checkbox"]:checked + label::after {
     top: 16px;
   }
 
