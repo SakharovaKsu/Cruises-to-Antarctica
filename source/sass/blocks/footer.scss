@@ -1,5 +1,5 @@
 .footer {
-  padding: 50px 0;
+  padding: 51px 0;
   background-color: $color-tangaroa;
 }
 
@@ -46,6 +46,11 @@
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
+  .footer {
+    padding-top: 44px;
+    padding-bottom: 41px;
+  }
+
   .footer__list {
     gap: 0;
     margin-top: -6px;
@@ -79,7 +84,7 @@
 
   .footer__list {
     gap: 8px;
-    margin-bottom: 23px;
+    margin-bottom: 16px;
   }
 
   .footer__link {

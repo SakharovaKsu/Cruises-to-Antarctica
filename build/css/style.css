@@ -732,7 +732,7 @@ button,
 }
 
 .header {
-  padding: 27px 0;
+  padding: 25px 0;
   z-index: 1;
 }
 
@@ -799,7 +799,7 @@ button,
 }
 
 .footer {
-  padding: 50px 0;
+  padding: 51px 0;
   background-color: #011c40;
 }
 
@@ -893,6 +893,7 @@ button,
   gap: 27px;
   padding-left: 0;
   margin: 0;
+  margin-top: 12px;
 }
 
 .social__img {
@@ -924,7 +925,7 @@ button,
 
 .intro {
   position: relative;
-  padding-top: 160px;
+  padding-top: 162px;
   padding-bottom: 300px;
   padding-left: 193px;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
@@ -1696,6 +1697,11 @@ button,
     padding: 12px;
   }
 
+  .footer {
+    padding-top: 44px;
+    padding-bottom: 41px;
+  }
+
   .footer__list {
     gap: 0;
     margin-top: -6px;
@@ -1723,6 +1729,7 @@ button,
 
   .social__list {
     gap: 21px;
+    margin-top: 6px;
   }
 
   .intro {
@@ -1872,7 +1879,7 @@ button,
   }
 
   .form__box {
-    margin-bottom: 27px;
+    margin-bottom: 54px;
   }
 
   .form__box h2 {
@@ -1882,12 +1889,9 @@ button,
   }
 
   .form__box p {
+    max-width: 390px;
     text-align: center;
     margin: 0 auto;
-  }
-
-  .form__box br {
-    display: block;
   }
 
   .form__inner {
@@ -1983,8 +1987,8 @@ button,
 
   .header__button {
     position: absolute;
-    top: 6px;
-    right: -5px;
+    top: 4px;
+    right: -2px;
     display: block;
     width: 24px;
     height: 12px;
@@ -2048,17 +2052,17 @@ button,
   .header__nav--opened {
     display: block;
     position: relative;
-    right: -20px;
+    right: -24px;
     background-color: #f9fbfd;
-    margin-top: -20px;
+    margin-top: -18px;
   }
 
   .header__nav--opened::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -36%;
-    width: 767px;
+    left: -14%;
+    width: 100vw;
     height: 100vh;
     background-color: #011c40;
     opacity: 0.5;
@@ -2069,8 +2073,8 @@ button,
     position: absolute;
     width: 42px;
     height: 22px;
-    top: 20px;
-    left: 20px;
+    top: 17px;
+    left: 12px;
     background-image: url("../img/svg/logo-mobile.svg");
     z-index: 1;
   }
@@ -2079,16 +2083,17 @@ button,
     display: block;
     position: absolute;
     height: 568px;
-    width: 285px;
-    left: 0;
-    top: 0;
+    width: 100%;
+    left: -3px;
+    top: -3px;
     background-color: #f9fbfd;
     margin: 0;
-    padding-top: 75px;
+    padding-top: 84px;
+    padding-left: 12px;
   }
 
   .header__nav--opened .header__item {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .header__nav--opened .header__link {
@@ -2143,7 +2148,7 @@ button,
 
   .footer__list {
     gap: 8px;
-    margin-bottom: 23px;
+    margin-bottom: 16px;
   }
 
   .footer__link {
@@ -2233,7 +2238,7 @@ button,
   }
 
   .catalog__item {
-    max-width: 270px;
+    max-width: 100%;
   }
 
   .catalog__item:hover .catalog__box,
@@ -2286,6 +2291,10 @@ button,
   .form__inner p {
     line-height: 142%;
     text-align: center;
+  }
+
+  .form__box br {
+    display: block;
   }
 
   .form__checkbox {

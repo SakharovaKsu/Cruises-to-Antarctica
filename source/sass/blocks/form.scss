@@ -168,7 +168,7 @@
   }
 
   .form__box {
-    margin-bottom: 27px;
+    margin-bottom: 54px;
   }
 
   .form__box h2 {
@@ -178,12 +178,9 @@
   }
 
   .form__box p {
+    max-width: 390px;
     text-align: center;
     margin: 0 auto;
-  }
-
-  .form__box br {
-    display: block;
   }
 
   .form__inner {
@@ -226,6 +223,10 @@
   .form__inner p {
     line-height: 142%;
     text-align: center;
+  }
+
+  .form__box br {
+    display: block;
   }
 
   .form__checkbox {
