@@ -4,7 +4,9 @@
   background-color: $color-pattens-blue;
 
   @include graphic-retina("benefits-block-background");
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .benefits__container h2 {
@@ -90,6 +92,7 @@
   .benefits__list {
     grid-template-columns: repeat(3, 206px);
     gap: 30px;
+    justify-content: center;
   }
 
   .benefits__item {

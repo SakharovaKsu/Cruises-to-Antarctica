@@ -1,8 +1,8 @@
 .wrapper {
   position: relative;
-
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
@@ -24,13 +24,21 @@
     position: absolute;
     content: "";
     background-color: $color-tangaroa;
-    background-size: 100% 670px;
+    background-size: 100% auto;
     background-repeat: no-repeat;
+    background-position: center bottom;
+    object-fit: cover;
     width: 100%;
     height: 670px;
     top: 0;
     left: 0;
     z-index: -1;
+  }
+}
+
+@media (max-width: $vp-1440) {
+  .firstscreen::before {
+    background-size: 100% 670px;
   }
 }
 
@@ -44,7 +52,7 @@
   .firstscreen::before {
     @include graphic-retina("home-screen-background-tablet");
     height: 638px;
-    background-size: auto 638px;
+    background-size: 100% auto;
   }
 }
 
@@ -53,7 +61,7 @@
     height: 500px;
 
     @include graphic-retina("home-screen-background-mobile");
-    background-size: auto 500px;
+    background-size: 100% auto;
   }
 }
 

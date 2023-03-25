@@ -115,8 +115,10 @@
 
   .header__nav--opened {
     display: block;
-    position: relative;
-    right: -24px;
+    position: fixed;
+    height: 100vh;
+    width: calc(100% - 35px);
+    right: 0;
     background-color: $color-alice-blue;
     margin-top: -18px;
 
@@ -145,10 +147,9 @@
 
   .header__nav--opened .header__list {
     display: block;
-    position: absolute;
-    height: 568px;
-    width: 100%;
-    left: -3px;
+    position: fixed;
+    height: 100vh;
+    width: calc(100% - 35px);
     top: -3px;
     background-color: $color-alice-blue;
     margin: 0;
@@ -175,11 +176,11 @@
     width: 18px;
     height: 2px;
     background-color: $color-tangaroa;
+    box-shadow: none;
   }
 
   .header__nav--opened .header__button::after {
     transform: rotate(45deg);
-    box-shadow: none;
   }
 
   .header__nav--opened .header__button::before {

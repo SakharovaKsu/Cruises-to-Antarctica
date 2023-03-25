@@ -3,7 +3,10 @@
   background-color: $color-maya-blue;
 
   @include graphic-retina("shape-background");
-  background-size: auto 100%;
+  background-size: 100% auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 .form__container {
