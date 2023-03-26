@@ -797,7 +797,8 @@ button,
   opacity: 0.3;
 }
 
-.header__button {
+.header__button,
+.header__overlay {
   display: none;
 }
 

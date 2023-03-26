@@ -17,7 +17,7 @@ export const navHeader = () => {
   });
 
   headerOverlay.addEventListener('click', function () {
-    headerNav.classList.remove('header__nav--opened');
+    headerNav.classList.toggle('header__nav--opened');
   });
 
   headerLink.forEach((link) => {

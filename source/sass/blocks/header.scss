@@ -41,9 +41,11 @@
   }
 }
 
-.header__button {
+.header__button,
+.header__overlay {
   display: none;
 }
+
 
 @media (max-width: ($vp-1024 - 1px)) {
   .header {
@@ -195,7 +197,7 @@
     width: 35px;
     height: 100vh;
     overflow: hidden;
-    background-color: rgba(0,43,102,.5);
+    background-color: rgba(0, 43, 102, 0.5);
     z-index: 3;
   }
 }
