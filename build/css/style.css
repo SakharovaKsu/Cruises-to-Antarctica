@@ -590,22 +590,14 @@ button,
 
 .firstscreen {
   position: relative;
-}
-
-.firstscreen::before {
-  position: absolute;
-  content: "";
   background-color: #011c40;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: cover;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
-  height: 670px;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  min-height: 670px;
 }
 
 .visually-hidden {
@@ -945,7 +937,7 @@ button,
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.intro h2 {
+.intro h1 {
   color: #f9fbfd;
   font-weight: 700;
   font-size: 54px;
@@ -1604,13 +1596,13 @@ button,
 
 @media (min-width: 1024px) {
 @supports (background-image: url("../img/home-screen-background.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background.webp");
     }
 }
 
 @supports not (background-image: url("../img/home-screen-background.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background.jpg");
     }
 }
@@ -1618,13 +1610,13 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
 @supports (background-image: url("../img/home-screen-background@2x.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background@2x.webp");
     }
 }
 
 @supports not (background-image: url("../img/home-screen-background@2x.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background@2x.jpg");
     }
 }
@@ -1637,7 +1629,7 @@ button,
 }
 
 @media (max-width: 1440px) {
-  .firstscreen::before {
+  .firstscreen {
     background-size: 100% 670px;
   }
 }
@@ -1693,19 +1685,19 @@ button,
 }
 
 @media (max-width: 1023px) {
-  .firstscreen::before {
-    height: 638px;
+  .firstscreen {
+    min-height: 638px;
     background-size: 100% auto;
   }
 
 @supports (background-image: url("../img/home-screen-background-tablet.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background-tablet.webp");
     }
 }
 
 @supports not (background-image: url("../img/home-screen-background-tablet.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background-tablet.jpg");
     }
 }
@@ -1769,7 +1761,7 @@ button,
     padding-left: 0;
   }
 
-  .intro h2 {
+  .intro h1 {
     font-size: 50px;
     line-height: 61px;
   }
@@ -1981,32 +1973,32 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
 @supports (background-image: url("../img/home-screen-background-tablet@2x.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background-tablet@2x.webp");
     }
 }
 
 @supports not (background-image: url("../img/home-screen-background-tablet@2x.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background-tablet@2x.jpg");
     }
 }
 }
 
 @media (max-width: 767px) {
-  .firstscreen::before {
-    height: 500px;
+  .firstscreen {
+    min-height: 500px;
     background-size: 100% auto;
   }
 
 @supports (background-image: url("../img/home-screen-background-mobile.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background-mobile.webp");
     }
 }
 
 @supports not (background-image: url("../img/home-screen-background-mobile.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background-mobile.jpg");
     }
 }
@@ -2199,7 +2191,7 @@ button,
     padding-bottom: 178px;
   }
 
-  .intro h2 {
+  .intro h1 {
     font-size: 36px;
     line-height: 125%;
   }
@@ -2381,13 +2373,13 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
 @supports (background-image: url("../img/home-screen-background-mobile@2x.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background-mobile@2x.webp");
     }
 }
 
 @supports not (background-image: url("../img/home-screen-background-mobile@2x.webp")) {
-    .firstscreen::before {
+    .firstscreen {
       background-image: url("../img/home-screen-background-mobile@2x.jpg");
     }
 }

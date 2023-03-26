@@ -6,7 +6,7 @@
   filter: drop-shadow(0 4px 4px $color-black);
 }
 
-.intro h2 {
+.intro h1 {
   color: $color-alice-blue;
   font-weight: 700;
   font-size: 54px;
@@ -31,7 +31,7 @@
     padding-left: 0;
   }
 
-  .intro h2 {
+  .intro h1 {
     font-size: 50px;
     line-height: 61px;
   }
@@ -48,7 +48,7 @@
     padding-bottom: 178px;
   }
 
-  .intro h2 {
+  .intro h1 {
     font-size: 36px;
     line-height: 125%;
   }

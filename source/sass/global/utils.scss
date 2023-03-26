@@ -19,46 +19,38 @@
 
 .firstscreen {
   position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-color: $color-tangaroa;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    object-fit: cover;
-    width: 100%;
-    height: 670px;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
+  background-color: $color-tangaroa;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  min-height: 670px;
 }
 
 @media (max-width: $vp-1440) {
-  .firstscreen::before {
+  .firstscreen {
     background-size: 100% 670px;
   }
 }
 
 @media (min-width: $vp-1024) {
-  .firstscreen::before {
+  .firstscreen {
     @include graphic-retina("home-screen-background");
   }
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
-  .firstscreen::before {
+  .firstscreen {
     @include graphic-retina("home-screen-background-tablet");
-    height: 638px;
+    min-height: 638px;
     background-size: 100% auto;
   }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
-  .firstscreen::before {
-    height: 500px;
+  .firstscreen {
+    min-height: 500px;
 
     @include graphic-retina("home-screen-background-mobile");
     background-size: 100% auto;
