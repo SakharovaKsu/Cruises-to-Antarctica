@@ -128,17 +128,7 @@
     background-color: $color-alice-blue;
     margin-top: -18px;
     z-index: 1;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -14%;
-      width: 100vw;
-      height: 100vh;
-      background-color: $color-tangaroa;
-      opacity: 0.5;
-    }
+    pointer-events: none;
 
     &::after {
       content: "";
@@ -167,6 +157,7 @@
 
   .header__nav--opened .header__item {
     margin-bottom: 26px;
+    pointer-events: all;
   }
 
   .header__nav--opened .header__link {
@@ -185,6 +176,7 @@
     height: 2px;
     background-color: $color-tangaroa;
     box-shadow: none;
+    pointer-events: all;
   }
 
   .header__nav--opened .header__button::after {
@@ -193,5 +185,17 @@
 
   .header__nav--opened .header__button::before {
     transform: rotate(-45deg);
+  }
+
+  .header__nav--opened .header__overlay {
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -35px;
+    width: 35px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0,43,102,.5);
+    z-index: 3;
   }
 }

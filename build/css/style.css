@@ -2075,17 +2075,7 @@ button,
     background-color: #f9fbfd;
     margin-top: -18px;
     z-index: 1;
-  }
-
-  .header__nav--opened::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -14%;
-    width: 100vw;
-    height: 100vh;
-    background-color: #011c40;
-    opacity: 0.5;
+    pointer-events: none;
   }
 
   .header__nav--opened::after {
@@ -2114,6 +2104,7 @@ button,
 
   .header__nav--opened .header__item {
     margin-bottom: 26px;
+    pointer-events: all;
   }
 
   .header__nav--opened .header__link {
@@ -2133,6 +2124,7 @@ button,
     background-color: #011c40;
     -webkit-box-shadow: none;
     box-shadow: none;
+    pointer-events: all;
   }
 
   .header__nav--opened .header__button::after {
@@ -2145,6 +2137,18 @@ button,
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+
+  .header__nav--opened .header__overlay {
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -35px;
+    width: 35px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 43, 102, 0.5);
+    z-index: 3;
   }
 
   .footer {
