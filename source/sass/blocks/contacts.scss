@@ -59,8 +59,8 @@
     outline: none;
   }
 
-  &:hover ~ .contacts__img,
-  &:focus-visible ~ .contacts__img {
+  &:hover .contacts__img,
+  &:focus-visible .contacts__img {
     fill: $color-maya-blue;
     outline: none;
   }

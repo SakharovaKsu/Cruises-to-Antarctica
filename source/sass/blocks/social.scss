@@ -7,17 +7,23 @@
   margin-top: 12px;
 }
 
-.social__img {
-  fill: $color-alice-blue;
-
-  @include hover-focus {
+.social__link {
+  &:hover .social__img,
+  &:focus-visible .social__img {
     fill: $color-maya-blue;
+  }
+
+  &:focus-visible {
     outline: none;
   }
 
-  @include active {
+  &:active .social__img {
     fill: $color-pattens-blue;
   }
+}
+
+.social__img {
+  fill: $color-alice-blue;
 }
 
 @media (max-width: ($vp-1024 - 1px)) {

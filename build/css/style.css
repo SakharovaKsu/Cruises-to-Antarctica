@@ -901,31 +901,21 @@ button,
   margin-top: 12px;
 }
 
+.social__link:hover .social__img,
+.social__link:focus-visible .social__img {
+  fill: #5bcfff;
+}
+
+.social__link:focus-visible {
+  outline: none;
+}
+
+.social__link:active .social__img {
+  fill: #d9e6f4;
+}
+
 .social__img {
   fill: #f9fbfd;
-}
-
-.social__img.focus-visible:focus {
-  fill: #5bcfff;
-  outline: none;
-}
-
-.social__img:focus {
-  fill: #5bcfff;
-  outline: none;
-}
-
-.social__img:focus-visible {
-  fill: #5bcfff;
-  outline: none;
-}
-
-.social__img:active {
-  fill: #d9e6f4;
-}
-
-.social__img.focus-visible:active {
-  fill: #d9e6f4;
 }
 
 .intro {
@@ -1566,8 +1556,8 @@ button,
   outline: none;
 }
 
-.contacts__link:hover ~ .contacts__img,
-.contacts__link:focus-visible ~ .contacts__img {
+.contacts__link:hover .contacts__img,
+.contacts__link:focus-visible .contacts__img {
   fill: #5bcfff;
   outline: none;
 }
@@ -1687,7 +1677,7 @@ button,
 @media (max-width: 1023px) {
   .firstscreen {
     min-height: 638px;
-    background-size: 100% auto;
+    background-size: cover;
   }
 
 @supports (background-image: url("../img/home-screen-background-tablet.webp")) {
@@ -1988,7 +1978,6 @@ button,
 @media (max-width: 767px) {
   .firstscreen {
     min-height: 500px;
-    background-size: 100% auto;
   }
 
 @supports (background-image: url("../img/home-screen-background-mobile.webp")) {
@@ -2066,9 +2055,11 @@ button,
   }
 
   .header__nav--nojs .header__list {
-    position: static;
+    position: absolute;
     min-height: 0;
-    margin-top: 14px;
+    margin-top: 0;
+    top: 6px;
+    left: 50px;
   }
 
   .header__nav--nojs .header__item {
@@ -2083,6 +2074,7 @@ button,
     right: 0;
     background-color: #f9fbfd;
     margin-top: -18px;
+    z-index: 1;
   }
 
   .header__nav--opened::before {
@@ -2104,7 +2096,7 @@ button,
     top: 17px;
     left: 12px;
     background-image: url("../img/svg/logo-mobile.svg");
-    z-index: 1;
+    z-index: 2;
   }
 
   .header__nav--opened .header__list {
@@ -2117,6 +2109,7 @@ button,
     margin: 0;
     padding-top: 84px;
     padding-left: 12px;
+    z-index: 1;
   }
 
   .header__nav--opened .header__item {
@@ -2429,11 +2422,6 @@ button,
 
   .logo:hover:not(.focus-visible) {
     opacity: 0.6;
-    outline: none;
-  }
-
-  .social__img:hover:not(.focus-visible) {
-    fill: #5bcfff;
     outline: none;
   }
 
