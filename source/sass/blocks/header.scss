@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.header__logo {
+  flex-shrink: 0;
+}
+
 .header__list {
   padding: 0;
   display: flex;
