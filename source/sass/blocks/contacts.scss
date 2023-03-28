@@ -48,12 +48,15 @@
   margin-bottom: 33px;
 }
 
-.contacts__link {
+.contacts__link,
+.contacts__address {
   display: flex;
   column-gap: 10px;
   margin: 0;
   margin-bottom: 22px;
+}
 
+.contacts__link {
   @include hover-focus {
     color: $color-maya-blue;
     outline: none;
@@ -71,7 +74,8 @@
   }
 }
 
-.contacts__link p {
+.contacts__link p,
+.contacts__address p {
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
@@ -119,7 +123,8 @@
     margin-bottom: 27px;
   }
 
-  .contacts__link p {
+  .contacts__link p,
+  .contacts__address p {
     max-width: 255px;
   }
 

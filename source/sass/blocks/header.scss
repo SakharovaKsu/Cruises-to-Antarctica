@@ -41,8 +41,7 @@
   }
 }
 
-.header__button,
-.header__overlay {
+.header__button {
   display: none;
 }
 
@@ -132,6 +131,17 @@
     z-index: 1;
     pointer-events: none;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -35px;
+      width: 35px;
+      height: 100vh;
+      overflow: hidden;
+      background-color: rgba(0, 43, 102, 0.5);
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -187,17 +197,5 @@
 
   .header__nav--opened .header__button::before {
     transform: rotate(-45deg);
-  }
-
-  .header__nav--opened .header__overlay {
-    display: block;
-    position: absolute;
-    top: -4px;
-    left: -35px;
-    width: 35px;
-    height: 100vh;
-    overflow: hidden;
-    background-color: rgba(0, 43, 102, 0.5);
-    z-index: 3;
   }
 }

@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initPhoneMask} from './vendor/phone-mask';
-import {navHeader} from './modules/nav-header';
+import {initNavHeader} from './modules/init-nav-header';
 import {initMap} from './modules/map';
 import {scrollPage} from './modules/scroll-page';
 
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  navHeader();
+  initNavHeader();
   scrollPage();
 
   initMap({

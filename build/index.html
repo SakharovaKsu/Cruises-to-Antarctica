@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
+    <meta name="description" content="Описание проекта" />
     <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" />
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" />
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" />
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -37,13 +41,12 @@
               <button class="header__button" type="button">
                 <span class="visually-hidden">Mеню</span>
               </button>
-              <div class="header__overlay"></div>
             </nav>
           </div>
         </header>
 
         <!-- Первый экран -->
-        <div class="intro">
+        <div class="main-screen">
           <div class="container">
             <h1>Круизы в&nbsp;Антарктику</h1>
             <p>Волшебный мир айсбергов и пингвинов</p>
@@ -399,15 +402,15 @@
                 <h2>Контакты</h2>
                 <p>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
               </div>
-              <address class="contacts__link">
+              <address class="contacts__address">
                 <svg class="contacts__img contacts__img--one" width="18" height="22" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/sprite.svg#pin"></use>
+                  <use xlink:href="img/sprite.svg#pin"></use>
                 </svg>
                 <p>г. Санкт Петербург, ул.&nbsp;Большая Конюшенная, 19/8</p>
               </address>
               <a class="contacts__link" href="tel:88002000000">
                 <svg class="contacts__img" width="18" height="18" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/sprite.svg#tel"></use>
+                  <use xlink:href="img/sprite.svg#tel"></use>
                 </svg>
                 <p>8-800-200-00-00</p>
               </a>
@@ -440,7 +443,7 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <svg class="social__img" width="12" height="20" aria-label="Логотип Одноклассников.">
+                  <svg class="social__img" width="12" height="20" aria-hidden="true">
                     <use xlink:href="./img/sprite.svg#ok"></use>
                   </svg>
                   <span class="visually-hidden">Одноклассники</span>
@@ -448,7 +451,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <svg class="social__img" width="20" height="20" aria-label="Логотип Dzen.">
+                  <svg class="social__img" width="20" height="20" aria-hidden="true">
                     <use xlink:href="./img/sprite.svg#dzen"></use>
                   </svg>
                   <span class="visually-hidden">Dzen</span>
@@ -456,7 +459,7 @@
               </li>
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <svg class="social__img" width="20" height="20" aria-label="Логотип Reddit.">
+                  <svg class="social__img" width="20" height="20" aria-hidden="true">
                     <use xlink:href="./img/sprite.svg#reddit"></use>
                   </svg>
                   <span class="visually-hidden">Reddit</span>

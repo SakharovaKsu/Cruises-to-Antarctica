@@ -1,4 +1,4 @@
-.intro {
+.main-screen {
   position: relative;
   padding-top: 162px;
   padding-bottom: 300px;
@@ -6,7 +6,7 @@
   filter: drop-shadow(0 4px 4px $color-black);
 }
 
-.intro h1 {
+.main-screen h1 {
   color: $color-alice-blue;
   font-weight: 700;
   font-size: 54px;
@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-.intro p {
+.main-screen p {
   font-size: 20px;
   line-height: 24px;
   text-shadow: 0 4px 4px $color-black;
@@ -25,35 +25,35 @@
 }
 
 @media (max-width: ($vp-1024 - 1px)) {
-  .intro {
+  .main-screen {
     padding-bottom: 277px;
     padding-top: 187px;
     padding-left: 0;
   }
 
-  .intro h1 {
+  .main-screen h1 {
     font-size: 50px;
     line-height: 61px;
   }
 
-  .intro p {
+  .main-screen p {
     font-size: 18px;
     line-height: 22px;
   }
 }
 
 @media (max-width: ($vp-768 - 1px)) {
-  .intro {
+  .main-screen {
     padding-top: 113px;
     padding-bottom: 178px;
   }
 
-  .intro h1 {
+  .main-screen h1 {
     font-size: 36px;
     line-height: 125%;
   }
 
-  .intro p {
+  .main-screen p {
     font-size: 16px;
     line-height: 140%;
     max-width: 200px;
