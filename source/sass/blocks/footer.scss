@@ -11,6 +11,7 @@
 .footer__logo {
   margin-right: 25px;
   flex-shrink: 0;
+  user-select: none;
 }
 
 .footer__list {
@@ -24,6 +25,7 @@
 .footer__link {
   color: $color-alice-blue;
   padding: 15px;
+  user-select: none;
 
   @include hover-focus {
     color: $color-maya-blue;

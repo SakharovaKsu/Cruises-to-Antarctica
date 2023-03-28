@@ -741,6 +741,10 @@ button,
 .header__logo {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .header__list {
@@ -762,6 +766,10 @@ button,
   line-height: 20px;
   color: #f9fbfd;
   padding: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .header__link.focus-visible:focus {
@@ -811,6 +819,10 @@ button,
   margin-right: 25px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .footer__list {
@@ -827,6 +839,10 @@ button,
 .footer__link {
   color: #f9fbfd;
   padding: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .footer__link.focus-visible:focus {
@@ -891,6 +907,13 @@ button,
   padding-left: 0;
   margin: 0;
   margin-top: 12px;
+}
+
+.social__link {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .social__link:hover .social__img,
@@ -1234,6 +1257,7 @@ button,
   grid-row: 3/4;
   -ms-grid-row-align: end;
   align-self: end;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -1431,6 +1455,10 @@ button,
   border: none;
   margin-top: 31px;
   width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
   background-color: #f9fbfd;
 }
@@ -1622,7 +1650,7 @@ button,
 
 @media (max-width: 1440px) {
   .firstscreen {
-    background-size: 100% 649px;
+    background-size: 100% 100%;
   }
 }
 
@@ -2088,7 +2116,7 @@ button,
     width: 42px;
     height: 22px;
     top: 17px;
-    left: 12px;
+    left: 16px;
     background-image: url("../img/svg/logo-mobile.svg");
     z-index: 2;
   }
@@ -2101,8 +2129,8 @@ button,
     top: -3px;
     background-color: #f9fbfd;
     margin: 0;
-    padding-top: 84px;
-    padding-left: 12px;
+    padding-top: 87px;
+    padding-left: 14px;
     z-index: 1;
   }
 
@@ -2115,6 +2143,11 @@ button,
     color: #011c40;
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .header__nav--opened .header__button {
+    top: 4px;
+    right: -10px;
   }
 
   .header__nav--opened .header__button::after,

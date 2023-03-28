@@ -138,6 +138,7 @@
   grid-column: 1/2;
   grid-row: 3/4;
   align-self: end;
+  user-select: none;
   cursor: pointer;
 
   @include hover-focus {

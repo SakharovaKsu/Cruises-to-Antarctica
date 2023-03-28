@@ -8,6 +8,8 @@
 }
 
 .social__link {
+  user-select: none;
+
   &:hover .social__img,
   &:focus-visible .social__img {
     fill: $color-maya-blue;
