@@ -7,20 +7,36 @@ const createMap = ({id, initials, placemark}) => {
 };
 
 const initMap = (mapData) => {
-  if (apiLoaded) {
-    createMap(mapData);
+  const mapElement = document.getElementById(mapData.id);
+  if (!mapElement) {
+    return;
   }
 
-  const scriptElement = document.createElement('script');
-  scriptElement.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
-  scriptElement.addEventListener('load', () => {
-    window.ymaps.ready(() => {
-      createMap(mapData);
-      apiLoaded = true;
-    });
+  if (apiLoaded) {
+    createMap(mapData);
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      const scriptElement = document.createElement('script');
+      scriptElement.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
+      scriptElement.addEventListener('load', () => {
+        window.ymaps.ready(() => {
+          createMap(mapData);
+          apiLoaded = true;
+        });
+      });
+
+      document.body.append(scriptElement);
+      observer.unobserve(mapElement);
+    }
+  }, {
+    rootMargin: '0px',
+    threshold: 0,
   });
 
-  document.body.append(scriptElement);
+  observer.observe(mapElement);
 };
 
 export {initMap};
