@@ -722,7 +722,7 @@ button,
 }
 
 .header {
-  padding: 25px 0;
+  padding: 26px 0;
   z-index: 1;
 }
 
@@ -913,10 +913,10 @@ button,
 .main-screen {
   position: relative;
   padding-top: 162px;
-  padding-bottom: 300px;
+  padding-bottom: 279px;
   padding-left: 193px;
-  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main-screen h1 {
@@ -938,7 +938,7 @@ button,
 }
 
 .description {
-  padding-top: 99px;
+  padding-top: 118px;
   padding-bottom: 145px;
 }
 
@@ -1081,7 +1081,7 @@ button,
   line-height: 150%;
   text-align: center;
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 48px;
 }
 
 .catalog__list {
@@ -1583,7 +1583,7 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
-  min-height: 670px;
+  min-height: 649px;
 }
 
 @media (min-width: 1024px) {
@@ -1622,7 +1622,7 @@ button,
 
 @media (max-width: 1440px) {
   .firstscreen {
-    background-size: 100% 670px;
+    background-size: 100% 649px;
   }
 }
 
@@ -1702,13 +1702,14 @@ button,
 
   .footer__list {
     gap: 0;
-    margin-top: -6px;
+    margin-top: -4px;
   }
 
   .footer__link {
     font-size: 12px;
     line-height: 15px;
     padding: 12px;
+    padding-right: 13px;
   }
 
   .footer__logo {
@@ -1734,16 +1735,20 @@ button,
     padding-bottom: 277px;
     padding-top: 187px;
     padding-left: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .main-screen h1 {
     font-size: 50px;
     line-height: 61px;
+    text-shadow: none;
   }
 
   .main-screen p {
     font-size: 18px;
     line-height: 22px;
+    text-shadow: none;
   }
 
   .description {
@@ -1789,7 +1794,7 @@ button,
   .benefits__item--one::before,
   .benefits__item--two::before,
   .benefits__item--three::before {
-    top: 27px;
+    top: 25px;
     left: 20px;
     height: 26px;
     background-size: auto 26px;
@@ -1818,11 +1823,12 @@ button,
 
   .catalog {
     padding-bottom: 100px;
+    padding-top: 89px;
   }
 
   .catalog h2 {
     font-size: 26px;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   .catalog__list {
@@ -1989,8 +1995,8 @@ button,
 
   .header__button {
     position: absolute;
-    top: 4px;
-    right: -2px;
+    top: 6px;
+    right: -5px;
     display: block;
     width: 24px;
     height: 12px;
@@ -2138,7 +2144,7 @@ button,
   }
 
   .footer {
-    padding: 42px 0;
+    padding: 40px 0;
   }
 
   .footer__logo {
@@ -2167,6 +2173,11 @@ button,
 
   .footer__social {
     margin-left: -3px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 20px;
   }
 
   .main-screen {
@@ -2234,12 +2245,12 @@ button,
   }
 
   .catalog {
-    padding: 55px 10px 65px 10px;
+    padding: 57px 10px 65px 10px;
   }
 
   .catalog h2 {
     font-size: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   .catalog__list {
@@ -2268,12 +2279,13 @@ button,
 
   .catalog__button {
     margin-left: 25px;
+    margin-right: 25px;
     padding: 10px 52px;
   }
 
   .form {
     padding-top: 60px;
-    padding-bottom: 76px;
+    padding-bottom: 64px;
   }
 
   .form__box {
@@ -2295,7 +2307,7 @@ button,
   .form__inner {
     width: 100%;
     max-width: 400px;
-    padding: 33px 30px 30px 30px;
+    padding: 33px 30px 40px 30px;
   }
 
   .form__inner p {
@@ -2333,7 +2345,7 @@ button,
   }
 
   .contacts {
-    padding-top: 56px;
+    padding-top: 57px;
     padding-bottom: 43px;
   }
 
@@ -2346,6 +2358,10 @@ button,
 
   .contacts__box {
     padding-top: 0;
+  }
+
+  .contacts__text {
+    margin-bottom: 28px;
   }
 
   .contacts__map {
