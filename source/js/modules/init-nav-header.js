@@ -5,9 +5,9 @@ export const initNavHeader = () => {
     return;
   }
 
-  const headerNav = document.querySelector('.header__nav');
-  const headerButton = document.querySelector('.header__button');
-  const headerLink = document.querySelectorAll('.header__link');
+  const headerNav = header.querySelector('.header__nav');
+  const headerButton = header.querySelector('.header__button');
+  const headerLinks = header.querySelectorAll('.header__link');
 
   headerNav.classList.remove('header__nav--nojs');
 
@@ -27,7 +27,7 @@ export const initNavHeader = () => {
     }
   });
 
-  headerLink.forEach((link) => {
+  headerLinks.forEach((link) => {
     link.addEventListener('click', () => onToggleMenu());
   });
 };
