@@ -630,7 +630,7 @@ button,
   outline: none;
 }
 
-.form__checkbox .is-invalid {
+.is-invalid {
   font-size: 12px;
   color: #ff1553;
 }
