@@ -196,7 +196,7 @@
 @media (max-width: ($vp-768 - 1px)) {
   .form {
     padding-top: 60px;
-    padding-bottom: 76px;
+    padding-bottom: 64px;
   }
 
   .form__box {
@@ -218,7 +218,7 @@
   .form__inner {
     width: 100%;
     max-width: 400px;
-    padding: 33px 30px 30px 30px;
+    padding: 33px 30px 40px 30px;
   }
 
   .form__inner p {

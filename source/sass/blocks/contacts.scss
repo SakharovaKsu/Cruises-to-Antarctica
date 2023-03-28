@@ -139,7 +139,7 @@
 
 @media (max-width: ($vp-768 - 1px)) {
   .contacts {
-    padding-top: 56px;
+    padding-top: 57px;
     padding-bottom: 43px;
   }
 
@@ -149,6 +149,10 @@
 
   .contacts__box {
     padding-top: 0;
+  }
+
+  .contacts__text {
+    margin-bottom: 28px;
   }
 
   .contacts__map {

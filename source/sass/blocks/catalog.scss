@@ -11,7 +11,7 @@
   line-height: 150%;
   text-align: center;
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 48px;
 }
 
 .catalog__list {
@@ -168,11 +168,12 @@
 @media (max-width: ($vp-1024 - 1px)) {
   .catalog {
     padding-bottom: 100px;
+    padding-top: 89px;
   }
 
   .catalog h2 {
     font-size: 26px;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   .catalog__list {
@@ -218,12 +219,12 @@
 
 @media (max-width: ($vp-768 - 1px)) {
   .catalog {
-    padding: 55px 10px 65px 10px;
+    padding: 57px 10px 65px 10px;
   }
 
   .catalog h2 {
     font-size: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
   .catalog__list {
@@ -251,6 +252,7 @@
 
   .catalog__button {
     margin-left: 25px;
+    margin-right: 25px;
     padding: 10px 52px;
   }
 }

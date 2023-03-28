@@ -54,13 +54,14 @@
 
   .footer__list {
     gap: 0;
-    margin-top: -6px;
+    margin-top: -4px;
   }
 
   .footer__link {
     font-size: 12px;
     line-height: 15px;
     padding: 12px;
+    padding-right: 13px;
   }
 
   .footer__logo {
@@ -70,7 +71,7 @@
 
 @media (max-width: ($vp-768 - 1px)) {
   .footer {
-    padding: 42px 0;
+    padding: 40px 0;
   }
 
   .footer__logo {

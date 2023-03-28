@@ -1,9 +1,9 @@
 .main-screen {
   position: relative;
   padding-top: 162px;
-  padding-bottom: 300px;
+  padding-bottom: 279px;
   padding-left: 193px;
-  filter: drop-shadow(0 4px 4px $color-black);
+  box-shadow: 0 4px 4px $color-black;
 }
 
 .main-screen h1 {
@@ -29,16 +29,19 @@
     padding-bottom: 277px;
     padding-top: 187px;
     padding-left: 0;
+    box-shadow: none;
   }
 
   .main-screen h1 {
     font-size: 50px;
     line-height: 61px;
+    text-shadow: none;
   }
 
   .main-screen p {
     font-size: 18px;
     line-height: 22px;
+    text-shadow: none;
   }
 }
 
