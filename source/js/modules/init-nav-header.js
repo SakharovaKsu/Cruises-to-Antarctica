@@ -19,11 +19,14 @@ export const initNavHeader = () => {
 
   headerButton.addEventListener('click', () => onToggleMenu());
 
-  document.addEventListener('click', (evt) => {
-    const click = evt.composedPath().includes(headerNav);
+  document.addEventListener('click', (e) => {
+
+    const click = e.composedPath().includes(headerNav);
 
     if (!click) {
-      onToggleMenu();
+      headerNav.classList.remove('header__nav--opened');
+      headerNav.classList.add('header__nav--closed');
+      document.body.classList.remove('scroll-lock');
     }
   });
 
