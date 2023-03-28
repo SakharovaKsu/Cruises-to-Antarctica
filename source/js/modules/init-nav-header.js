@@ -1,4 +1,10 @@
 export const initNavHeader = () => {
+  const header = document.querySelector('.header');
+
+  if (!header) {
+    return;
+  }
+
   const headerNav = document.querySelector('.header__nav');
   const headerButton = document.querySelector('.header__button');
   const headerLink = document.querySelectorAll('.header__link');
@@ -11,30 +17,17 @@ export const initNavHeader = () => {
     document.body.classList.toggle('scroll-lock');
   };
 
-  if (!headerButton) {
-    return;
-  } else {
-    headerButton.addEventListener('click', function () {
-      onToggleMenu();
-    });
-  }
+  headerButton.addEventListener('click', () => onToggleMenu());
 
-  document.addEventListener('click', (e) => {
-    const click = e.composedPath().includes(headerNav);
+  document.addEventListener('click', (evt) => {
+    const click = evt.composedPath().includes(headerNav);
+
     if (!click) {
-      headerNav.classList.remove('header__nav--opened');
-      headerNav.classList.add('header__nav--closed');
-      document.body.classList.remove('scroll-lock');
+      onToggleMenu();
     }
   });
 
-  if (!headerLink) {
-    return;
-  } else {
-    headerLink.forEach((link) => {
-      link.addEventListener('click', function () {
-        onToggleMenu();
-      });
-    });
-  }
+  headerLink.forEach((link) => {
+    link.addEventListener('click', () => onToggleMenu());
+  });
 };
