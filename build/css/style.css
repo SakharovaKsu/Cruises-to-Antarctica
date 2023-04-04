@@ -1165,6 +1165,11 @@ button,
   display: none;
 }
 
+.catalog__item:hover .catalog__box,
+.catalog__item:focus-visible .catalog__box {
+  overflow: scroll;
+}
+
 .catalog__item:hover .catalog__box::-webkit-scrollbar,
 .catalog__item:focus-visible .catalog__box::-webkit-scrollbar {
   width: 4px;
@@ -1203,7 +1208,6 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  overflow: scroll;
   z-index: 2;
 }
 
