@@ -722,6 +722,8 @@ button,
 }
 
 .header {
+  position: absolute;
+  width: 100%;
   padding: 26px 0;
   z-index: 1;
 }
@@ -940,7 +942,7 @@ button,
 
 .main-screen {
   position: relative;
-  padding-top: 162px;
+  padding-top: 270px;
   padding-bottom: 279px;
   padding-left: 193px;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -1801,7 +1803,7 @@ button,
 
   .main-screen {
     padding-bottom: 277px;
-    padding-top: 187px;
+    padding-top: 267px;
     padding-left: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -2271,7 +2273,7 @@ button,
   }
 
   .main-screen {
-    padding-top: 113px;
+    padding-top: 175px;
     padding-bottom: 178px;
   }
 

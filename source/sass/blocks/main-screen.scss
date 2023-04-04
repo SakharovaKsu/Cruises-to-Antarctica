@@ -1,6 +1,6 @@
 .main-screen {
   position: relative;
-  padding-top: 162px;
+  padding-top: 270px;
   padding-bottom: 279px;
   padding-left: 193px;
   box-shadow: 0 4px 4px $color-black;
@@ -33,7 +33,7 @@
 @media (max-width: ($vp-1024 - 1px)) {
   .main-screen {
     padding-bottom: 277px;
-    padding-top: 187px;
+    padding-top: 267px;
     padding-left: 0;
     box-shadow: none;
   }
@@ -53,7 +53,7 @@
 
 @media (max-width: ($vp-768 - 1px)) {
   .main-screen {
-    padding-top: 113px;
+    padding-top: 175px;
     padding-bottom: 178px;
   }
 
