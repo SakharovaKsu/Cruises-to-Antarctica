@@ -60,6 +60,22 @@
   &:focus-visible .catalog__image {
     display: none;
   }
+
+  &:hover .catalog__box::-webkit-scrollbar,
+  &:focus-visible .catalog__box::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &:hover .catalog__box::-webkit-scrollbar-track,
+  &:focus-visible .catalog__box::-webkit-scrollbar-track {
+    background: $color-tangaroa;
+  }
+
+  &:hover .catalog__box::-webkit-scrollbar-thumb,
+  &:focus-visible .catalog__box::-webkit-scrollbar-thumb {
+    background-color: $color-tangaroa;
+    border: 2px solid $color-maya-blue;
+  }
 }
 
 .catalog__image {
