@@ -18,12 +18,17 @@
       <div class="firstscreen">
 
         <!-- Меню -->
-        <header class="header">
-          <div class="container">
-            <nav class="header__nav header__nav--closed">
-              <a class="header__logo logo" href="index.html">
-                <img class="logo__picture" src="img/svg/logo.svg" width="70" height="38" alt="Иконка логотипа Круиза в Антарктиду.">
-              </a>
+        <header class="header header--closed">
+          <div class="container header__container">
+            <a class="header__logo logo" href="index.html">
+              <svg width="70" height="38" role="img" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <button class="header__button" type="button">
+              <span class="visually-hidden">Mеню</span>
+            </button>
+            <nav class="header__navigation-list">
               <ul class="header__list">
                 <li class="header__item">
                   <a class="header__link" href="#benefits">Преимущества </a>
@@ -38,9 +43,6 @@
                   <a class="header__link" href="#contacts">Контакты</a>
                 </li>
               </ul>
-              <button class="header__button" type="button">
-                <span class="visually-hidden">Mеню</span>
-              </button>
             </nav>
           </div>
         </header>
