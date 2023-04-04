@@ -73,7 +73,7 @@
   .header__button {
     position: absolute;
     top: 6px;
-    right: -5px;
+    right: 0;
     display: block;
     width: 24px;
     height: 12px;
@@ -87,7 +87,7 @@
       content: "";
       position: absolute;
       top: 18px;
-      right: 20px;
+      right: 15px;
       width: 24px;
       height: 2px;
       background-color: $color-alice-blue;
@@ -132,7 +132,6 @@
     background-color: $color-alice-blue;
     margin-top: -18px;
     z-index: 1;
-    pointer-events: none;
 
     &::before {
       content: "";
@@ -143,6 +142,7 @@
       height: 100vh;
       overflow: hidden;
       background-color: rgba(0, 43, 102, 0.5);
+      pointer-events: none;
     }
 
     &::after {

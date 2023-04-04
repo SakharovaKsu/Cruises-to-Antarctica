@@ -1482,6 +1482,7 @@ button,
   user-select: none;
   cursor: pointer;
   background-color: #f9fbfd;
+  color: #011c40;
 }
 
 .form__button.focus-visible:focus {
@@ -1920,6 +1921,8 @@ button,
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: 50% 100%;
+    object-position: 50% 100%;
   }
 
   .catalog__box h3 {
@@ -1934,6 +1937,7 @@ button,
     margin-left: 35px;
     margin-right: 35px;
     padding: 9px 62px;
+    color: #011c40;
   }
 
   .form {
@@ -2059,7 +2063,7 @@ button,
   .header__button {
     position: absolute;
     top: 6px;
-    right: -5px;
+    right: 0;
     display: block;
     width: 24px;
     height: 12px;
@@ -2074,7 +2078,7 @@ button,
     content: "";
     position: absolute;
     top: 18px;
-    right: 20px;
+    right: 15px;
     width: 24px;
     height: 2px;
     background-color: #f9fbfd;
@@ -2131,7 +2135,6 @@ button,
     background-color: #f9fbfd;
     margin-top: -18px;
     z-index: 1;
-    pointer-events: none;
   }
 
   .header__nav--opened::before {
@@ -2143,6 +2146,7 @@ button,
     height: 100vh;
     overflow: hidden;
     background-color: rgba(0, 43, 102, 0.5);
+    pointer-events: none;
   }
 
   .header__nav--opened::after {

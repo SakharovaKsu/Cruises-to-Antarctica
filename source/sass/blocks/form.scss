@@ -134,6 +134,7 @@
   user-select: none;
   cursor: pointer;
   background-color: $color-alice-blue;
+  color: $color-tangaroa;
 
   @include hover-focus {
     background-color: $color-maya-blue;
