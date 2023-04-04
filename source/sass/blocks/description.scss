@@ -32,17 +32,21 @@
 }
 
 @media (max-width: ($vp-1440 - 1px)) {
+  .description {
+    padding-top: 119px;
+  }
+
   .description__container {
     gap: 30px;
-    align-items: flex-start;
+    // align-items: flex-start;
   }
 
-  .description__box {
-    max-width: 400px;
-  }
+  // .description__box {
+  //   max-width: 400px;
+  // }
 
   .description__box h2 {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 }
 

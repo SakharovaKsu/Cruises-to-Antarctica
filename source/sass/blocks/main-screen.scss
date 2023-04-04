@@ -24,6 +24,12 @@
   margin-top: 12px;
 }
 
+@media (max-width: ($vp-1440 - 1px)) {
+  .main-screen {
+    padding-left: 191px;
+  }
+}
+
 @media (max-width: ($vp-1024 - 1px)) {
   .main-screen {
     padding-bottom: 277px;

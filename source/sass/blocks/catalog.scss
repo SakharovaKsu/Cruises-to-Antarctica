@@ -153,8 +153,12 @@
 }
 
 @media (max-width: ($vp-1440 - 1px)) {
+  .catalog {
+    padding-top: 86px;
+  }
+
   .catalog__list {
-    gap: 20px;
+    gap: 32px;
   }
 
   .catalog__link {

@@ -3,6 +3,11 @@
   margin: 0 auto;
 
   @include vp-1439 {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+  @include vp-1279 {
     max-width: 904px;
     margin: 0 auto;
   }
