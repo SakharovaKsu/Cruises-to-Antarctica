@@ -1165,6 +1165,22 @@ button,
   display: none;
 }
 
+.catalog__item:hover .catalog__box::-webkit-scrollbar,
+.catalog__item:focus-visible .catalog__box::-webkit-scrollbar {
+  width: 4px;
+}
+
+.catalog__item:hover .catalog__box::-webkit-scrollbar-track,
+.catalog__item:focus-visible .catalog__box::-webkit-scrollbar-track {
+  background: #011c40;
+}
+
+.catalog__item:hover .catalog__box::-webkit-scrollbar-thumb,
+.catalog__item:focus-visible .catalog__box::-webkit-scrollbar-thumb {
+  background-color: #011c40;
+  border: 2px solid #5bcfff;
+}
+
 .catalog__image {
   position: absolute;
   top: 0;
@@ -2147,6 +2163,7 @@ button,
     padding-top: 87px;
     padding-left: 14px;
     z-index: 1;
+    overflow: scroll;
   }
 
   .header__nav--opened .header__item {
