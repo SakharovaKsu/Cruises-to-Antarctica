@@ -5,15 +5,15 @@ export const initNavHeader = () => {
     return;
   }
 
-  const headerNav = header.querySelector('.header__nav');
+  // const headerNav = header.querySelector('.header');
   const headerButton = header.querySelector('.header__button');
   const headerLinks = header.querySelectorAll('.header__link');
 
-  headerNav.classList.remove('header__nav--nojs');
+  header.classList.remove('header--nojs');
 
   const onToggleMenu = () => {
-    headerNav.classList.toggle('header__nav--closed');
-    headerNav.classList.toggle('header__nav--opened');
+    header.classList.toggle('header--closed');
+    header.classList.toggle('header--opened');
     document.body.classList.toggle('scroll-lock');
   };
 
@@ -21,11 +21,11 @@ export const initNavHeader = () => {
 
   document.addEventListener('click', (e) => {
 
-    const click = e.composedPath().includes(headerNav);
+    const click = e.composedPath().includes(header);
 
     if (!click) {
-      headerNav.classList.remove('header__nav--opened');
-      headerNav.classList.add('header__nav--closed');
+      header.classList.remove('header--opened');
+      header.classList.add('header--closed');
       document.body.classList.remove('scroll-lock');
     }
   });
