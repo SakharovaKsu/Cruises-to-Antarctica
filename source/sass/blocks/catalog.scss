@@ -255,11 +255,22 @@
   }
 
   .catalog__list {
+    gap: 0;
     grid-template-columns: 1fr;
   }
 
   .catalog__item {
+    position: relative;
     max-width: 100%;
+    padding-top: 116%;
+    padding-left: 9%;
+    padding-bottom: 7%;
+    margin-bottom: 30px;
+
+    &:hover,
+    &:focus-visible {
+      padding: 0;
+    }
 
     &:hover .catalog__box,
     &:focus-visible .catalog__box {
@@ -268,13 +279,12 @@
   }
 
   .catalog__box {
-    padding-top: 28px;
-    padding-left: 0;
+    padding: 0;
   }
 
   .catalog__box h3 {
-    padding-bottom: 18px;
-    padding-left: 25px;
+    padding: 0;
+    margin: 0;
   }
 
   .catalog__button {
